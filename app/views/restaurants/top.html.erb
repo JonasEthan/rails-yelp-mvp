@@ -1,0 +1,10 @@
+<h1 class="text-center">Our Top selection</h1>
+<div class="container text-center vh-50 overflow-auto text-wrap">
+  <p><%= link_to "Back to all", restaurants_path %></p>
+  <% @restaurants.each do |restaurant| %>
+    <div class="m-4 bg-dark bg-gradient">
+      <h3 class="mt-4"><%= restaurant.name %></h3>
+      <%= link_to "More Info", restaurant_path(restaurant.id) %>
+    </div>
+  <% end %>
+</div>

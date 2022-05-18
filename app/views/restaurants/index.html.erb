@@ -1,8 +1,10 @@
 <h1 class="text-center">Here is our Collection</h1>
-<div class="container text-center vh-50 overflow-auto text-wrap">
+<div class="container text-center">
+  <p><%= link_to "Top Selection", top_restaurants_path %></p>
+  <p><%= link_to "Add a new Restaurant",new_restaurant_path %></p>
   <% @restaurants.each do |restaurant| %>
-    <div class="m-4 bg-dark bg-gradient">
-      <h3 class="mt-4"><%= restaurant.name %></h3>
+    <div class="m-4 p-2 bg-dark bg-gradient rounded">
+      <h3 class=><%= restaurant.name %></h3>
       <%= link_to "More Info", restaurant_path(restaurant.id) %>
     </div>
   <% end %>

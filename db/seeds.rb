@@ -10,6 +10,7 @@
   Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.phone_number,
     rating: rand(0..5)
   )
 end
