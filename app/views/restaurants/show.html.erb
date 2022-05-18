@@ -1,0 +1,15 @@
+<h1 class="text-center"><%= @restaurant.name %></h1>
+<div class="container text-center">
+  <div class="bg-gradient rounded">
+    <p>Address</p>
+    <p><%= @restaurant.address %></p>
+  </div>
+  <br>
+  <div>
+    <p>Average Rating</p>
+    <p><%= @restaurant.rating %> / 5</p>
+  </div>
+  <div>
+    <%= link_to "Back", restaurants_path %>
+  </div>
+</div>
