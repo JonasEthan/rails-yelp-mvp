@@ -1,0 +1,6 @@
+<h1 class="text-center">Your Feedback</h1>
+<%= simple_form_for([@review, params[:restaurant]]) do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating, collection: [0, 1, 2, 3, 4, 5] %>
+  <%= f.submit %>
+<% end %>
