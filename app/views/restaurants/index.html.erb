@@ -5,6 +5,7 @@
   <% @restaurants.each do |restaurant| %>
     <div class="m-4 p-2 bg-dark bg-gradient rounded">
       <h3 class=><%= restaurant.name %></h3>
+      <h5><%= restaurant.category.capitalize %></h5>
       <%= link_to "More Info", restaurant_path(restaurant.id) %>
     </div>
   <% end %>

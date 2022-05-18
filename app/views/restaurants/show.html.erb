@@ -1,18 +1,20 @@
 <h1 class="text-center"><%= @restaurant.name %></h1>
 <div class="container text-center">
   <div class="bg-gradient rounded">
+    <p>Specialty</p>
+    <p><%= @restaurant.category %></p>
+  </div>
+  <div class="bg-gradient rounded">
     <p>Address</p>
     <p><%= @restaurant.address %></p>
   </div>
-  <div>
+  <div class="bg-gradient rounded">
     <p>Contact</p>
     <p><%= @restaurant.phone_number %></p>
   </div>
-  <div>
+  <div class="bg-gradient rounded"><div>
     <p>Average Rating</p>
     <p><%= @restaurant.rating %> / 5</p>
-  </div>
-  <div>
     <%= link_to "Back", restaurants_path %>
   </div>
 </div>

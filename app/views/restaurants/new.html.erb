@@ -4,6 +4,7 @@
     <%= f.input :name, label: 'The name of the Restaurant'%>
     <%= f.input :address, label: 'Address'%>
     <%= f.input :phone_number, label: 'Phone Number'%>
+    <%= f.input :category, collection: ['chinese', 'italian', 'japanese', 'french', 'belgian'] %>
     <%= f.submit %>
   <% end %>
 </div>

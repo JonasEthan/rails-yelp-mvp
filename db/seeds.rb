@@ -5,12 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+CATEGORIES = ['chinese', 'italian', 'japanese', 'french', 'belgian']
 
 100.times do
+  cat = rand(0..4)
   Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.phone_number,
+    category: CATEGORIES[cat],
     rating: rand(0..5)
   )
 end
